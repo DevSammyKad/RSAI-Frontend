@@ -1,0 +1,49 @@
+import * as React from "react";
+const SvgDashboard = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    fill="none"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <rect
+      width={7}
+      height={7}
+      x={3.5}
+      y={4}
+      stroke="#000"
+      strokeWidth={2}
+      rx={2.5}
+    />
+    <rect
+      width={7}
+      height={7}
+      x={3.5}
+      y={14}
+      stroke="#000"
+      strokeWidth={2}
+      rx={2.5}
+    />
+    <rect
+      width={7}
+      height={7}
+      x={13.5}
+      y={4}
+      stroke="#000"
+      strokeWidth={2}
+      rx={2.5}
+    />
+    <rect
+      width={7}
+      height={7}
+      x={13.5}
+      y={14}
+      stroke="#000"
+      strokeWidth={2}
+      rx={2.5}
+    />
+  </svg>
+);
+export default SvgDashboard;
