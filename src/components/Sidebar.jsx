@@ -67,7 +67,7 @@ const Sidebar = () => {
     <div
       className={`bg-white shadow-sm ${
         isExpanded ? 'w-[270px]' : 'w-24'
-      } flex flex-col justify-between relative`}
+      } flex flex-col justify-between relative `}
     >
       <button
         onClick={handleToggleSidebar}
@@ -93,10 +93,14 @@ const Sidebar = () => {
                 <div className="flex justify-center items-center space-x-5">
                   <div className="flex justify-center items-center">
                     {item.icon && (
-                      <item.icon className="w-6 h-6 flex justify-center items-center" />
+                      <item.icon
+                        className={` ${
+                          isActive(index) ? 'text-purple-500 ' : ''
+                        } w-6 h-6 flex justify-center items-center `}
+                      />
                     )}
                   </div>
-                  <div className={`${isExpanded ? '' : 'hidden'} text-base`}>
+                  <div className={`${isExpanded ? '' : 'hidden'} text-sm`}>
                     {item.heading}
                   </div>
                 </div>
@@ -109,7 +113,7 @@ const Sidebar = () => {
       <div
         className={` relative  my-5${
           isExpanded ? ' ' : 'hidden'
-        } bg-yellow-50 h-60 mx-5  rounded-3xl`}
+        } hidden bg-yellow-50 h-60 mx-5  rounded-3xl`}
       >
         <div className=" flex justify-center  relative">
           <div className="absolute -top-10 bg-yellow-50 rounded-full w-20 h-20 flex justify-center items-center">

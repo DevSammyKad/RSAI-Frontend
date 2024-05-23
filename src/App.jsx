@@ -14,12 +14,12 @@ import Courses from './pages/Courses';
 function App() {
   return (
     <Router>
-      <div className="flex h-screen">
-        <div className="flex-1 flex flex-col overflow-hidde">
+      <div className="flex w-full h-screen  ">
+        <div className="flex-1 flex flex-col">
           <Navbar />
-          <div className="flex flex-1 overflow-hidden ">
+          <div className="flex flex-1">
             <Sidebar />
-            <main className="flex-1 overflow-x-hidden overflow-y-auto bg-bg-light-gray p-4">
+            <main className="flex-1  bg-slate-200 bg-bg-light-gray p-4 overflow-y-scroll">
               <Routes>
                 <Route path="/dashboard" element={<DashBoard />} />
                 <Route path="/attendance" element={<Leads />} />

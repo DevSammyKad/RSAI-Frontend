@@ -5,7 +5,6 @@ import Logo from '../assets/Logo.png';
 import SvgSearchStatus from '../assets/iconComponents/SearchStatus';
 import person from '../assets/person.jpg';
 import SvgChevronDown from '../assets/iconComponents/ChevronDown';
-
 import NavDropDownMenu from '../components/NavDropDownMenu';
 
 const Navbar = () => {
@@ -29,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="h-24 flex justify-between items-center mx-7 shadow-sm">
+      <nav className="h-20 flex justify-between items-center mx-7 shadow-sm">
         <div className="flex items-center gap-4">
           <img
             className='className="rounded-full w-11 flex justify-center items-center  object-cover object-center " '
